@@ -1,12 +1,13 @@
+import itertools
+import math
+import csv
+
 import shapefile
+import pandas
 from bokeh.io import show, output_file
 from bokeh.models import LogColorMapper, Circle, ColumnDataSource
 from bokeh.palettes import Viridis6 as palette
 from bokeh.plotting import figure
-import itertools
-import statistics
-import math
-import csv
 
 #This is the function for making the map of africa graph
 def shp():
@@ -47,8 +48,8 @@ def shp():
     onerate = [i/max for i in rates]
     color_mapper = LogColorMapper(palette=palette)
 
-    #Loading data into Bokeh
-    data=dict(
+    # Loading data into Bokeh
+    data = dict(
         x=lats,
         y=lons,
         rate=onerate,
@@ -57,11 +58,14 @@ def shp():
 
     TOOLS = "pan,wheel_zoom,reset,hover,save"
 
-    #Plot
+    # Plot
     p = figure(
         title="Protests", tools=TOOLS,
-        x_axis_location=None, y_axis_location=None,tooltips=[
-            ("Name", "@name"), ("% Distance from Mid", "@rate%"), ("(Long, Lat)", "($x, $y)")
+        x_axis_location=None, y_axis_location=None,
+        tooltips=[
+            ("Name", "@name"),
+            # ("% Distance from Mid", "@rate%"),
+            ("(Long, Lat)", "($x, $y)")
         ])
 
     p.grid.grid_line_color = None
@@ -73,30 +77,27 @@ def shp():
     # show(p)
     return p
 
+
+def safe_lt(comp):
+    def comp_func(val):
+        try:
+            return float(val) < comp
+        except ValueError:
+            return False
+    return comp_func
+
+
 def points(plot):
-    lats = []
-    lons = []
-    with open("protests.csv", "r", encoding="utf-8") as file:
-        csvreader = csv.DictReader(file)
-        for row in csvreader:
-            try:
-                if row["LONG"] == "checked":
-                    lats.append(float(row["Unique Key"]))
-                    lons.append(float(row["LAT"]))
-                else:
-                    lats.append(float(row["LAT"]))
-                    lons.append(float(row["LONG"]))
-            except Exception as e:
-                print("(" + str(row["LONG"]) + ", " +  str(row["LAT"]) + ")")
-
-    # for i in range(len(lats)):
-    #     print("(" + str(lats[i]) + ", " +  str(lons[i]) + ")")
-    # print(lats[:5])
-    # print(lons[:5])
-
-
-    data=ColumnDataSource(dict(lons=lons,
-              lats=lats))
+    protests = pandas.read_csv('protests.csv')
+    protests_wrong_long = protests[
+        (protests.LONG == 'checked') | (protests.LONG.apply(safe_lt(-20)))
+    ]
+    protests = protests.drop(protests_wrong_long.index, axis='rows')
+    lats = list(map(float, protests.LAT))
+    lons = list(map(float, protests.LONG))
+    data = ColumnDataSource(
+        dict(lons=lons, lats=lats)
+    )
 
     glyph = Circle(x="lons", y="lats", fill_color="red", fill_alpha=0.8)
 
