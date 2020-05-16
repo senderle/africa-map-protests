@@ -155,7 +155,8 @@ def sum_protests(protests, nations):
 
 
 def base_map():
-    TOOLS = "pan,wheel_zoom,reset,hover,save"
+    # TOOLS = "pan,wheel_zoom,reset,hover,save"
+    TOOLS = "pan,wheel_zoom,reset,save"
 
     # Plot
     p = figure(
@@ -164,10 +165,10 @@ def base_map():
         x_axis_location=None, y_axis_location=None,
         x_range=(-2350000, 6350000), y_range=(-4250000, 4450000),
         x_axis_type="mercator", y_axis_type="mercator",
-        tooltips=[
-            ("Number of Protests", "@protestcount"),
-            ("Rank Fraction", "@rank"),
-        ]
+        # tooltips=[
+        #     ("Number of Protests", "@protestcount"),
+        #     ("Rank Fraction", "@rank"),
+        # ]
         )
 
     tile_provider = get_provider(CARTODBPOSITRON)
