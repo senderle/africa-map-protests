@@ -12,7 +12,8 @@ from reverse_geocoder import search as reverse_geo
 import pandas
 from bokeh.io import show, output_file
 from bokeh.models import (
-    LogColorMapper, LinearColorMapper, Circle, ColumnDataSource
+    LogColorMapper, LinearColorMapper, Circle, InvertedTriangle,
+    ColumnDataSource
 )
 from bokeh.palettes import Blues8 as palette
 from bokeh.plotting import figure
@@ -131,7 +132,8 @@ def sum_protests(protests, nations):
             try:
                 rg = reverse_geo((lat, lon))[0]
             except IndexError:
-                pass
+                continue
+
             cname = pycountry.countries.get(alpha_2=rg['cc']).name
             if cname in _special_names:
                 cname = _special_names[cname]
@@ -163,7 +165,7 @@ def base_map():
         title="Protests", tools=TOOLS,
         active_scroll='wheel_zoom',
         x_axis_location=None, y_axis_location=None,
-        x_range=(-2350000, 6350000), y_range=(-4250000, 4450000),
+        x_range=(-2300000, 6300000), y_range=(-4300000, 4600000),
         x_axis_type="mercator", y_axis_type="mercator",
         # tooltips=[
         #     ("Number of Protests", "@protestcount"),
@@ -184,12 +186,14 @@ def patches(plot, patch_data):
     color_mapper = LinearColorMapper(palette=palette)
     plot.patches('x', 'y', source=patch_data,
                  fill_color={'field': 'rank', 'transform': color_mapper},
-                 fill_alpha=0.5, line_color="white", line_width=0.5)
+                 fill_alpha=0.4, line_color="white", line_alpha=0.5,
+                 line_width=0.5)
     return plot
 
 
 def points(plot, point_data):
-    glyph = Circle(x='x', y='y', fill_color="red", fill_alpha=0.8)
+    glyph = Circle(x='x', y='y', fill_color="blue", fill_alpha=0.7,
+                   line_color="gray", line_alpha=0.5, size=4)
 
     plot.add_glyph(ColumnDataSource(point_data), glyph)
     output_file("index.html")
