@@ -1,6 +1,7 @@
 import itertools
 import math
 import csv
+import json
 
 from collections import defaultdict, Counter
 
@@ -12,8 +13,8 @@ from reverse_geocoder import search as reverse_geo
 import pandas
 from bokeh.io import show, output_file
 from bokeh.models import (
-    LogColorMapper, LinearColorMapper, Circle, InvertedTriangle,
-    ColumnDataSource
+    LogColorMapper, LinearColorMapper, Circle, Patches,
+    InvertedTriangle, ColumnDataSource, HoverTool
 )
 from bokeh.palettes import Blues8 as palette
 from bokeh.plotting import figure
@@ -45,7 +46,7 @@ def safe_lt(comp):
     return comp_func
 
 
-def load_shape_records():
+def load_shapefile():
     # importing shp and dbf
 
     # shp = open("World-Provinces/africa.shp", "rb")
@@ -94,6 +95,61 @@ def load_shape_records():
     )
 
 
+def load_geojson():
+    with open('Africa/africa-nations.json') as ip:
+        nations = json.load(ip)
+
+    # initializing arrays for data for Bokeh
+    lats = []
+    lons = []
+    xs = []
+    ys = []
+    names = []
+
+    # For each shape in the shapefile (each province)
+    for n in nations['features']:
+        # Shape data comes in a list of lists, since some nations must be
+        # represented as multiple disjoint patches. Bokeh can handle
+        # disjoint patches, but uses NaN values as a delimiter between
+        # them instead of a list of lists.
+        lon_patches = []
+        lat_patches = []
+        multi_poly = n['geometry']['coordinates']
+        if n['geometry']['type'] == 'Polygon':
+            multi_poly = [multi_poly]
+
+        for polygon in multi_poly:
+            for patch in polygon:
+                # Each patch comes in the form of a sequence of (lat, lon)
+                # pairs. Bokeh wants separate sequences.
+                lon, lat = zip(*patch)
+
+                # Append NaN delimiters.
+                lon_patches.extend(lon + (float('NaN'),))
+                lat_patches.extend(lat + (float('NaN'),))
+
+            # We need web mercator coordinates instead of lat/lons if we are
+            # to display these alongside map tile data. NaN input generates
+            # NaN output, so we can just map over the entire arrays.
+            x, y = zip(*map(lat_lon_to_web_mercator, lon, lat))
+
+            # Aggregate the data to columns.
+            names.append(n['properties']['admin'])
+            xs.append(x)
+            ys.append(y)
+            lats.append(lat)
+            lons.append(lon)
+
+    # Loading data into Bokeh
+    return dict(
+        x=xs,
+        y=ys,
+        lats=lats,
+        lons=lons,
+        name=names
+    )
+
+
 def load_protests():
     protests = pandas.read_csv('protests.csv')
     protests_wrong_long = protests[
@@ -114,7 +170,7 @@ def load_protests():
 def load_protest_reverse():
     try:
         return pandas.read_csv('protest-reverse-cache.csv')
-    except RuntimeError:
+    except FileNotFoundError:
         pass
 
 
@@ -125,10 +181,16 @@ def save_protest_reverse(data):
     df.to_csv('protest-reverse-cache.csv')
 
 
-_special_names = {
+_special_names_shapefile = {
     "Côte d'Ivoire": 'Cote d`Ivoire',
     'Congo, The Democratic Republic of the': 'Democratic Republic of Congo',
     'Congo': 'Congo-Brazzaville'
+}
+_special_names_geojson = {
+    'Congo': 'Republic of Congo',
+    'Congo, The Democratic Republic of the':
+        'Democratic Republic of the Congo',
+    "Côte d'Ivoire": 'Ivory Coast'
 }
 
 
@@ -149,8 +211,8 @@ def sum_protests(protests, nations):
                 continue
 
             cname = pycountry.countries.get(alpha_2=rg['cc']).name
-            if cname in _special_names:
-                cname = _special_names[cname]
+            if cname in _special_names_geojson:
+                cname = _special_names_geojson[cname]
             counts[cname] += 1
             rg['countryname'] = cname
             geo_data.append(rg)
@@ -171,7 +233,6 @@ def sum_protests(protests, nations):
 
 
 def base_map():
-    # TOOLS = "pan,wheel_zoom,reset,hover,save"
     TOOLS = "pan,wheel_zoom,reset,save"
 
     # Plot
@@ -181,47 +242,62 @@ def base_map():
         x_axis_location=None, y_axis_location=None,
         x_range=(-2300000, 6300000), y_range=(-4300000, 4600000),
         x_axis_type="mercator", y_axis_type="mercator",
-        # tooltips=[
-        #     ("Number of Protests", "@protestcount"),
-        #     ("Rank Fraction", "@rank"),
-        # ]
         )
 
     tile_provider = get_provider(STAMEN_TONER)
     tile_provider.url = 'http://tile.stamen.com/toner-lite/{Z}/{X}/{Y}@2x.png'
     p.add_tile(tile_provider)
-
     p.grid.grid_line_color = None
-    p.hover.point_policy = "follow_mouse"
 
     return p
 
 
 def patches(plot, patch_data):
     color_mapper = LinearColorMapper(palette=palette)
-    plot.patches('x', 'y', source=patch_data,
-                 fill_color={'field': 'rank', 'transform': color_mapper},
-                 fill_alpha=0.4, line_color="lightblue", line_alpha=0.2,
-                 line_width=2.0)
+    patches = Patches(
+        xs='x', ys='y',
+        fill_color={'field': 'rank', 'transform': color_mapper},
+        fill_alpha=0.4, line_color="lightblue", line_alpha=0.2,
+        line_width=2.0
+    )
+    hover_patches = Patches(
+        xs='x', ys='y',
+        fill_color={'field': 'rank', 'transform': color_mapper},
+        fill_alpha=0.4, line_color="purple", line_alpha=0.8,
+        line_width=2.0
+    )
+    render = plot.add_glyph(ColumnDataSource(patch_data),
+                            patches,
+                            hover_glyph=hover_patches)
+    plot.add_tools(HoverTool(
+        # tooltips=[
+        #     ("Country", "@name"),
+        #     ("Number of Protests", "@protestcount"),
+        # ],
+        tooltips=None,
+        renderers=[render],
+        point_policy="follow_mouse"
+    ))
     return plot
 
 
 def points(plot, point_data):
-    glyph = Circle(x='x', y='y', fill_color="purple", fill_alpha=0.5,
+    point = Circle(x='x', y='y', fill_color="purple", fill_alpha=0.5,
                    line_color="gray", line_alpha=0.5, size=6)
-
-    plot.add_glyph(ColumnDataSource(point_data), glyph)
-    output_file("index.html")
+    plot.add_glyph(ColumnDataSource(point_data),
+                   point)
 
 
 if __name__ == "__main__":
     plot = base_map()
 
     protests = load_protests()
-    nations = load_shape_records()
+    # nations = load_shapefile()
+    nations = load_geojson()
     sum_protests(protests, nations)
 
     patches(plot, nations)
     points(plot, protests)
 
+    output_file("index.html")
     show(plot)
