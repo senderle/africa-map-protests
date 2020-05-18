@@ -17,7 +17,14 @@ from bokeh.models import (
 )
 from bokeh.palettes import Blues8 as palette
 from bokeh.plotting import figure
-from bokeh.tile_providers import CARTODBPOSITRON, get_provider
+from bokeh.tile_providers import (
+    CARTODBPOSITRON_RETINA,
+    STAMEN_TERRAIN_RETINA,
+    STAMEN_TONER,
+    ESRI_IMAGERY,
+    OSM,
+    get_provider
+)
 
 # This is the function for making the map of africa graph
 
@@ -118,6 +125,13 @@ def save_protest_reverse(data):
     df.to_csv('protest-reverse-cache.csv')
 
 
+_special_names = {
+    "Côte d'Ivoire": 'Cote d`Ivoire',
+    'Congo, The Democratic Republic of the': 'Democratic Republic of Congo',
+    'Congo': 'Congo-Brazzaville'
+}
+
+
 def sum_protests(protests, nations):
     counts = defaultdict(int)
     lons = protests['lons']
@@ -173,7 +187,8 @@ def base_map():
         # ]
         )
 
-    tile_provider = get_provider(CARTODBPOSITRON)
+    tile_provider = get_provider(STAMEN_TONER)
+    tile_provider.url = 'http://tile.stamen.com/toner-lite/{Z}/{X}/{Y}@2x.png'
     p.add_tile(tile_provider)
 
     p.grid.grid_line_color = None
@@ -186,8 +201,8 @@ def patches(plot, patch_data):
     color_mapper = LinearColorMapper(palette=palette)
     plot.patches('x', 'y', source=patch_data,
                  fill_color={'field': 'rank', 'transform': color_mapper},
-                 fill_alpha=0.4, line_color="white", line_alpha=0.5,
-                 line_width=0.5)
+                 fill_alpha=0.4, line_color="lightblue", line_alpha=0.2,
+                 line_width=2.0)
     return plot
 
 
@@ -197,13 +212,6 @@ def points(plot, point_data):
 
     plot.add_glyph(ColumnDataSource(point_data), glyph)
     output_file("index.html")
-
-
-_special_names = {
-    "Côte d'Ivoire": 'Cote d`Ivoire',
-    'Congo, The Democratic Republic of the': 'Democratic Republic of Congo',
-    'Congo': 'Congo-Brazzaville'
-}
 
 
 if __name__ == "__main__":
