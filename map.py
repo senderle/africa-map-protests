@@ -207,8 +207,8 @@ def patches(plot, patch_data):
 
 
 def points(plot, point_data):
-    glyph = Circle(x='x', y='y', fill_color="blue", fill_alpha=0.7,
-                   line_color="gray", line_alpha=0.5, size=4)
+    glyph = Circle(x='x', y='y', fill_color="purple", fill_alpha=0.5,
+                   line_color="gray", line_alpha=0.5, size=6)
 
     plot.add_glyph(ColumnDataSource(point_data), glyph)
     output_file("index.html")
