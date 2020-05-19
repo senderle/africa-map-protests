@@ -271,7 +271,9 @@ def patches(plot, patch_data):
     )
     render = plot.add_glyph(ColumnDataSource(patch_data),
                             patches,
-                            hover_glyph=hover_patches)
+                            hover_glyph=hover_patches,
+                            selection_glyph=patches,
+                            nonselection_glyph=patches)
     plot.add_tools(HoverTool(
         # tooltips=[
         #     ("Country", "@name"),
