@@ -14,7 +14,8 @@ import pandas
 from bokeh.io import show, output_file
 from bokeh.models import (
     LogColorMapper, LinearColorMapper, Circle, Patches,
-    InvertedTriangle, ColumnDataSource, HoverTool
+    InvertedTriangle, ColumnDataSource, GeoJSONDataSource,
+    HoverTool, TapTool, OpenURL
 )
 from bokeh.palettes import Blues8 as palette
 from bokeh.plotting import figure
@@ -233,7 +234,7 @@ def sum_protests(protests, nations):
 
 
 def base_map():
-    TOOLS = "pan,wheel_zoom,reset,save"
+    TOOLS = "pan,wheel_zoom,tap,reset,save"
 
     # Plot
     p = figure(
@@ -244,8 +245,10 @@ def base_map():
         x_axis_type="mercator", y_axis_type="mercator",
         )
 
-    tile_provider = get_provider(STAMEN_TONER)
-    tile_provider.url = 'http://tile.stamen.com/toner-lite/{Z}/{X}/{Y}@2x.png'
+    # tile_provider = get_provider(STAMEN_TONER)
+    # tile_provider.url = ('http://tile.stamen.com/toner-lite/'
+    #                      '{Z}/{X}/{Y}@2x.png')
+    tile_provider = get_provider(CARTODBPOSITRON_RETINA)
     p.add_tile(tile_provider)
     p.grid.grid_line_color = None
 
@@ -278,6 +281,11 @@ def patches(plot, patch_data):
         renderers=[render],
         point_policy="follow_mouse"
     ))
+    tap = plot.select_one(TapTool)
+    tap.renderers = [render]
+    tap.callback = OpenURL(
+        url='https://wikipedia.com/wiki/@name{safe}'
+    )
     return plot
 
 
