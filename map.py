@@ -1,30 +1,24 @@
-import itertools
 import math
-import csv
-import json
 
 from collections import defaultdict, Counter
 
-import shapefile
 import pycountry
 from reverse_geocoder import search as reverse_geo
 
 # from shapely.geometry import Point, Polygon
 import pandas
+import geopandas as gpd
+import shapely
 from bokeh.io import show, output_file
 from bokeh.models import (
-    LogColorMapper, LinearColorMapper, Circle, Patches,
-    InvertedTriangle, ColumnDataSource, GeoJSONDataSource,
+    LinearColorMapper, Circle, Patches, MultiPolygons,
+    ColumnDataSource, GeoJSONDataSource,
     HoverTool, TapTool, OpenURL
 )
 from bokeh.palettes import Blues8 as palette
 from bokeh.plotting import figure
 from bokeh.tile_providers import (
     CARTODBPOSITRON_RETINA,
-    STAMEN_TERRAIN_RETINA,
-    STAMEN_TONER,
-    ESRI_IMAGERY,
-    OSM,
     get_provider
 )
 
@@ -38,6 +32,38 @@ def lat_lon_to_web_mercator(lon, lat):
     return x, y
 
 
+def polygon_to_list(poly):
+    shape = [list(poly.exterior.coords)]
+    shape.extend(list(i.coords) for i in poly.interiors)
+    return shape
+
+
+def multipolygons_to_xs_ys(multipolygons):
+    geometries = []
+    for m in multipolygons:
+        if isinstance(m, shapely.geometry.Polygon):
+            m = [m]
+        else:
+            m = list(m)
+        geometries.append(list(map(polygon_to_list, m)))
+
+    geo_xs = [[[[x for x, y in ring_pairs]
+                for ring_pairs in polygon]
+               for polygon in multipolygon]
+              for multipolygon in geometries]
+    geo_ys = [[[[y for x, y in ring_pairs]
+                for ring_pairs in polygon]
+               for polygon in multipolygon]
+              for multipolygon in geometries]
+    return geo_xs, geo_ys
+
+
+def geodf_to_cds(geodf):
+    geo_xs, geo_ys = multipolygons_to_xs_ys(geodf['geometry'])
+    geodf = geodf.assign(xs=geo_xs, ys=geo_ys)
+    return ColumnDataSource(geodf.drop(columns='geometry'))
+
+
 def safe_lt(comp):
     def comp_func(val):
         try:
@@ -48,107 +74,18 @@ def safe_lt(comp):
 
 
 def load_shapefile():
-    # importing shp and dbf
-
-    # shp = open("World-Provinces/africa.shp", "rb")
-    # dbf = open("World-Provinces/africa.dbf", "rb")
-
-    shp = open("Africa/africa.shp", "rb")
-    dbf = open("Africa/africa.dbf", "rb")
-    sf = shapefile.Reader(shp=shp, dbf=dbf)
-
-    # initializing arrays for data for Bokeh
-    lats = []
-    lons = []
-    xs = []
-    ys = []
-    names = []
-
-    # For each shape in the shapefile (each province)
-    for shprec in sf.shapeRecords():
-        names.append(shprec.record[2])
-        # Not quite sure what's going on here but copied code that fixed the
-        # strange lines issues
-        lon, lat = map(list, zip(*shprec.shape.points))
-        indices = shprec.shape.parts.tolist()
-        lat = [lat[i:j] + [float('NaN')] for i, j in
-               zip(indices, indices[1:]+[None])]
-        lon = [lon[i:j] + [float('NaN')] for i, j in
-               zip(indices, indices[1:]+[None])]
-        lat = list(itertools.chain.from_iterable(lat))
-        lon = list(itertools.chain.from_iterable(lon))
-        x, y = zip(*map(lat_lon_to_web_mercator, lon, lat))
-
-        # Eventually adding the list of lats for the shape to global lats list,
-        # and list of lons for the shape to global lons list
-        xs.append(x)
-        ys.append(y)
-        lats.append(lat)
-        lons.append(lon)
-
-    # Loading data into Bokeh
-    return dict(
-        x=xs,
-        y=ys,
-        lats=lats,
-        lons=lons,
-        name=names
-    )
+    gdf = gpd.read_file('Africa/Africa.shp')
+    gdf.crs = {'init': 'epsg:4326'}
+    gdf = gdf.to_crs('EPSG:3857')
+    gdf['admin'] = gdf['COUNTRY']
+    print(gdf.head())
+    return gdf
 
 
 def load_geojson():
-    with open('Africa/africa-nations.json') as ip:
-        nations = json.load(ip)
-
-    # initializing arrays for data for Bokeh
-    lats = []
-    lons = []
-    xs = []
-    ys = []
-    names = []
-
-    # For each shape in the shapefile (each province)
-    for n in nations['features']:
-        # Shape data comes in a list of lists, since some nations must be
-        # represented as multiple disjoint patches. Bokeh can handle
-        # disjoint patches, but uses NaN values as a delimiter between
-        # them instead of a list of lists.
-        lon_patches = []
-        lat_patches = []
-        multi_poly = n['geometry']['coordinates']
-        if n['geometry']['type'] == 'Polygon':
-            multi_poly = [multi_poly]
-
-        for polygon in multi_poly:
-            for patch in polygon:
-                # Each patch comes in the form of a sequence of (lat, lon)
-                # pairs. Bokeh wants separate sequences.
-                lon, lat = zip(*patch)
-
-                # Append NaN delimiters.
-                lon_patches.extend(lon + (float('NaN'),))
-                lat_patches.extend(lat + (float('NaN'),))
-
-            # We need web mercator coordinates instead of lat/lons if we are
-            # to display these alongside map tile data. NaN input generates
-            # NaN output, so we can just map over the entire arrays.
-            x, y = zip(*map(lat_lon_to_web_mercator, lon, lat))
-
-            # Aggregate the data to columns.
-            names.append(n['properties']['admin'])
-            xs.append(x)
-            ys.append(y)
-            lats.append(lat)
-            lons.append(lon)
-
-    # Loading data into Bokeh
-    return dict(
-        x=xs,
-        y=ys,
-        lats=lats,
-        lons=lons,
-        name=names
-    )
+    gdf = gpd.read_file('Africa/africa-nations.json')
+    gdf = gdf.to_crs('EPSG:3857')
+    return gdf
 
 
 def load_protests():
@@ -214,6 +151,8 @@ def sum_protests(protests, nations):
             cname = pycountry.countries.get(alpha_2=rg['cc']).name
             if cname in _special_names_geojson:
                 cname = _special_names_geojson[cname]
+            # if cname in _special_names_shapefile:
+            #     cname = _special_names_shapefile[cname]
             counts[cname] += 1
             rg['countryname'] = cname
             geo_data.append(rg)
@@ -222,15 +161,16 @@ def sum_protests(protests, nations):
     else:
         counts = Counter(geo_data['countryname'])
 
-    print(set(counts) - set(nations['name']))
-    print(set(nations['name']) - set(counts))
+    print(set(counts) - set(nations['admin']))
+    print(set(nations['admin']) - set(counts))
 
-    nations['protestcount'] = [counts[n] for n in nations['name']]
+    nations['protestcount'] = [counts[n] for n in nations['admin']]
+
     nation_rank = sorted(set(counts.values()), reverse=True)
     nation_rank.append(0)
     nation_rank = {c: i for i, c in enumerate(nation_rank)}
-    nation_rank = {n: nation_rank[counts[n]] for n in nations['name']}
-    nations['rank'] = [nation_rank[n] for n in nations['name']]
+    nation_rank = {n: nation_rank[counts[n]] for n in nations['admin']}
+    nations['rank'] = [nation_rank[n] for n in nations['admin']]
 
 
 def base_map():
@@ -257,19 +197,19 @@ def base_map():
 
 def patches(plot, patch_data):
     color_mapper = LinearColorMapper(palette=palette)
-    patches = Patches(
-        xs='x', ys='y',
+    patches = MultiPolygons(
+        xs='xs', ys='ys',
         fill_color={'field': 'rank', 'transform': color_mapper},
         fill_alpha=0.4, line_color="lightblue", line_alpha=0.2,
         line_width=2.0
     )
-    hover_patches = Patches(
-        xs='x', ys='y',
+    hover_patches = MultiPolygons(
+        xs='xs', ys='ys',
         fill_color={'field': 'rank', 'transform': color_mapper},
         fill_alpha=0.4, line_color="purple", line_alpha=0.8,
         line_width=2.0
     )
-    render = plot.add_glyph(ColumnDataSource(patch_data),
+    render = plot.add_glyph(geodf_to_cds(patch_data),
                             patches,
                             hover_glyph=hover_patches,
                             selection_glyph=patches,
