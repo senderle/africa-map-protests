@@ -58,10 +58,18 @@ def multipolygons_to_xs_ys(multipolygons):
     return geo_xs, geo_ys
 
 
+# If the world were a good place, this function would not be
+# needed, and we could pass the geopandas dataframe straight
+# to GeoJSONDataSource. That ALMOST works. But for some
+# reason, no existing Bokeh glyph understands how to render
+# patches with holes in them as represented by shapely Polygons.
+# The closest thing is Bokeh's MultiPolygons glyph, but it
+# doesn't accept shapely objects or geojson or anything
+# like that. Wah wah. So instead we have to do this by hand.
 def geodf_to_cds(geodf):
     geo_xs, geo_ys = multipolygons_to_xs_ys(geodf['geometry'])
     geodf = geodf.assign(xs=geo_xs, ys=geo_ys)
-    return ColumnDataSource(geodf.drop(columns='geometry'))
+    return GeoJSONDataSource(geojson=geodf.to_json())
 
 
 def safe_lt(comp):
