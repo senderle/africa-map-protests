@@ -11,7 +11,7 @@ import geopandas as gpd
 import shapely
 from bokeh.io import show, output_file
 from bokeh.models import (
-    LinearColorMapper, Circle, Patches, MultiPolygons,
+    LinearColorMapper, Circle, MultiPolygons,
     ColumnDataSource, GeoJSONDataSource,
     HoverTool, TapTool, OpenURL
 )
@@ -90,10 +90,39 @@ def load_shapefile():
     return gdf
 
 
-def load_geojson():
-    gdf = gpd.read_file('Africa/africa-nations.json')
-    gdf = gdf.to_crs('EPSG:3857')
-    return gdf
+def can_be_simplified(val, tol=10.0):
+    try:
+        val.simplify(tol)
+        return True
+    except (ValueError, AttributeError):
+        return False
+
+
+def load_geojson(simple=True, simplify_tol=None):
+    if simple:
+        gdf = gpd.read_file('Africa/africa-nations.json')
+        gdf = gdf.to_crs('EPSG:3857')
+        return gdf
+    else:
+        # Use simple shape data for Africa to thin out global shape data.
+        africa = gpd.read_file('Africa/africa-nations.json')[['admin']]
+
+        gdf = gpd.read_file('Africa/countries.geojson')
+        gdf['admin'] = gdf['ADMIN']
+        gdf = gdf.set_index('ADMIN')
+        gdf = gdf.loc[africa['admin']]
+
+        # Project from lat,lon data to web mercator.
+        gdf = gdf.to_crs('EPSG:3857')
+
+        # Use shapely simplification routine if simplify_tol is specified.
+        if simplify_tol is not None:
+            gdf = gdf[gdf['geometry'].apply(can_be_simplified)]
+            gdf['geometry'] = gdf['geometry'].simplify(
+                simplify_tol,
+                preserve_topology=False
+            )
+        return gdf
 
 
 def load_protests():
@@ -208,14 +237,14 @@ def patches(plot, patch_data):
     patches = MultiPolygons(
         xs='xs', ys='ys',
         fill_color={'field': 'rank', 'transform': color_mapper},
-        fill_alpha=0.4, line_color="lightblue", line_alpha=0.2,
-        line_width=2.0
+        fill_alpha=0.5, line_color="lightblue", line_alpha=0.3,
+        line_width=3.0
     )
     hover_patches = MultiPolygons(
         xs='xs', ys='ys',
         fill_color={'field': 'rank', 'transform': color_mapper},
-        fill_alpha=0.4, line_color="purple", line_alpha=0.8,
-        line_width=2.0
+        fill_alpha=0.5, line_color="purple", line_alpha=0.8,
+        line_width=3.0
     )
     render = plot.add_glyph(geodf_to_cds(patch_data),
                             patches,
@@ -250,7 +279,6 @@ if __name__ == "__main__":
     plot = base_map()
 
     protests = load_protests()
-    # nations = load_shapefile()
     nations = load_geojson()
     sum_protests(protests, nations)
 
