@@ -16,6 +16,7 @@ from bokeh.palettes import Blues8 as palette
 from bokeh.plotting import figure
 from bokeh.tile_providers import (
     CARTODBPOSITRON_RETINA,
+    STAMEN_TONER,
     get_provider
 )
 
@@ -185,24 +186,25 @@ def base_map():
 
     # Plot
     p = figure(
-        title="Protests", tools=TOOLS,
+        title="", tools=TOOLS,
         active_scroll='wheel_zoom',
+        plot_width=1000, plot_height=600,
         x_axis_location=None, y_axis_location=None,
-        x_range=(-2300000, 6300000), y_range=(-4300000, 4600000),
+        y_range=(-4300000, 4600000),
         x_axis_type="mercator", y_axis_type="mercator",
         )
     p.toolbar_location = None
-
-    # tile_provider = get_provider(STAMEN_TONER)
-    # tile_provider.url = ('http://tile.stamen.com/toner-lite/'
-    #                      '{Z}/{X}/{Y}@2x.png')
-    tile_provider = get_provider(CARTODBPOSITRON_RETINA)
-    # tile_provider.url = ('https://tiles.basemaps.cartocdn.com/'
-    #                      'light_only_labels/{z}/{x}/{y}@2x.png')
-    p.add_tile(tile_provider)
     p.grid.grid_line_color = None
 
     return p
+
+
+def tiles(plot, provider=CARTODBPOSITRON_RETINA, url=None):
+    tile_provider = get_provider(CARTODBPOSITRON_RETINA)
+    if url is not None:
+        tile_provider.url = url
+    plot.add_tile(tile_provider)
+    return plot
 
 
 def patches(plot, patch_data):
@@ -254,6 +256,18 @@ if __name__ == "__main__":
     nations = load_geojson()
     sum_protests(protests, nations)
 
+    # tiles(
+    #     plot,
+    #     provider=STAMEN_TONER,
+    #     url='http://tile.stamen.com/toner-lite/{Z}/{X}/{Y}@2x.png',
+    #     # url='http://tile.stamen.com/toner-labels/{Z}/{X}/{Y}@2x.png'
+    # )
+    tiles(
+        plot,
+        provider=CARTODBPOSITRON_RETINA,
+        # url='https://tiles.basemaps.cartocdn.com/'
+        # 'light_only_labels/{z}/{x}/{y}@2x.png'
+    )
     patches(plot, nations)
     points(plot, protests)
 
