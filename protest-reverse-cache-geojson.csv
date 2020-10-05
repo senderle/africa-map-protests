@@ -1,0 +1,735 @@
+,admin1,countryname,cc,lat,admin2,name,lon
+0,Alger,Algeria,DZ,36.7525,,Algiers,3.04197
+1,Boumerdes,Algeria,DZ,36.74625,,Naciria,3.83163
+2,Tamanghasset,Algeria,DZ,27.19351,,I-n-Salah,2.46069
+3,Tamanghasset,Algeria,DZ,27.19351,,I-n-Salah,2.46069
+4,Alger,Algeria,DZ,36.7525,,Algiers,3.04197
+5,Tamanghasset,Algeria,DZ,27.19351,,I-n-Salah,2.46069
+6,Alger,Algeria,DZ,36.7525,,Algiers,3.04197
+7,Tamanghasset,Algeria,DZ,27.19351,,I-n-Salah,2.46069
+8,Alger,Algeria,DZ,36.7525,,Algiers,3.04197
+9,Bouira,Algeria,DZ,36.37489,,Bouira,3.902
+10,Tizi Ouzou,Algeria,DZ,36.71182,,Tizi Ouzou,4.04591
+11,Boumerdes,Algeria,DZ,36.76639,,Boumerdas,3.47717
+12,Alger,Algeria,DZ,36.7525,,Algiers,3.04197
+13,Alger,Algeria,DZ,36.7525,,Algiers,3.04197
+14,Alger,Algeria,DZ,36.7525,,Algiers,3.04197
+15,Alger,Algeria,DZ,36.7525,,Algiers,3.04197
+16,Constantine,Algeria,DZ,36.365,,Constantine,6.61472
+17,Wilaya de M'Sila,Algeria,DZ,35.70583,,M'Sila,4.54194
+18,Skikda,Algeria,DZ,36.87617,,Skikda,6.90921
+19,Tizi Ouzou,Algeria,DZ,36.71182,,Tizi Ouzou,4.04591
+20,Bie,Angola,AO,-12.01667,,Camacupa,17.48333
+21,Luanda,Angola,AO,-8.83682,,Luanda,13.23432
+22,Luanda,Angola,AO,-8.83682,,Luanda,13.23432
+23,Luanda,Angola,AO,-8.83682,,Luanda,13.23432
+24,Luanda,Angola,AO,-8.83682,,Luanda,13.23432
+25,Bie,Angola,AO,-12.01667,,Camacupa,17.48333
+26,Luanda,Angola,AO,-8.83682,,Luanda,13.23432
+27,Luanda,Angola,AO,-8.83682,,Luanda,13.23432
+28,Luanda,Angola,AO,-8.83682,,Luanda,13.23432
+29,Luanda,Angola,AO,-8.83682,,Luanda,13.23432
+30,Luanda,Angola,AO,-8.83682,,Luanda,13.23432
+31,Luanda,Angola,AO,-8.83682,,Luanda,13.23432
+32,Borgou,Benin,BJ,9.19916,,Beterou,2.25855
+33,Borgou,Benin,BJ,9.19916,,Beterou,2.25855
+34,Borgou,Benin,BJ,9.19916,,Beterou,2.25855
+35,Queme,Benin,BJ,6.49646,,Porto-Novo,2.60359
+36,Borgou,Benin,BJ,9.19916,,Beterou,2.25855
+37,Atlantique,Benin,BJ,6.44852,,Abomey-Calavi,2.35566
+38,Atlantique,Benin,BJ,6.44852,,Abomey-Calavi,2.35566
+39,Atlantique,Benin,BJ,6.44852,,Abomey-Calavi,2.35566
+40,Atlantique,Benin,BJ,6.44852,,Abomey-Calavi,2.35566
+41,Atlantique,Benin,BJ,6.44852,,Abomey-Calavi,2.35566
+42,Atlantique,Benin,BJ,6.44852,,Abomey-Calavi,2.35566
+43,Atlantique,Benin,BJ,6.44852,,Abomey-Calavi,2.35566
+44,Atlantique,Benin,BJ,6.44852,,Abomey-Calavi,2.35566
+45,Atlantique,Benin,BJ,6.44852,,Abomey-Calavi,2.35566
+46,Atlantique,Benin,BJ,6.44852,,Abomey-Calavi,2.35566
+47,Atlantique,Benin,BJ,6.44852,,Abomey-Calavi,2.35566
+48,Plateau,Benin,BJ,7.36332,,Ketou,2.59978
+49,Kouffo,Benin,BJ,6.93333,,Aplahoue,1.68333
+50,Borgou,Benin,BJ,9.33716,,Parakou,2.63031
+51,Borgou,Benin,BJ,9.33716,,Parakou,2.63031
+52,Borgou,Benin,BJ,9.33716,,Parakou,2.63031
+53,Central,Botswana,BW,-21.18333,,Mopipi,24.88333
+54,South East,Botswana,BW,-24.65451,,Gaborone,25.90859
+55,South East,Botswana,BW,-24.65451,,Gaborone,25.90859
+56,South East,Botswana,BW,-24.65451,,Gaborone,25.90859
+57,South East,Botswana,BW,-24.65451,,Gaborone,25.90859
+58,South East,Botswana,BW,-24.65451,,Gaborone,25.90859
+59,South East,Botswana,BW,-24.65451,,Gaborone,25.90859
+60,South East,Botswana,BW,-24.65451,,Gaborone,25.90859
+61,South East,Botswana,BW,-25.41667,,Janeng,25.55
+62,Kweneng,Botswana,BW,-24.40659,,Molepolole,25.49508
+63,Kweneng,Botswana,BW,-24.62694,,Mogoditshane,25.86556
+64,Kweneng,Botswana,BW,-24.62694,,Mogoditshane,25.86556
+65,Kweneng,Botswana,BW,-24.62694,,Mogoditshane,25.86556
+66,Kweneng,Botswana,BW,-24.62694,,Mogoditshane,25.86556
+67,Southern,Botswana,BW,-24.96675,,Kanye,25.33273
+68,South East,Botswana,BW,-24.65451,,Gaborone,25.90859
+69,South East,Botswana,BW,-24.65451,,Gaborone,25.90859
+70,South East,Botswana,BW,-24.65451,,Gaborone,25.90859
+71,South East,Botswana,BW,-24.65451,,Gaborone,25.90859
+72,South East,Botswana,BW,-24.65451,,Gaborone,25.90859
+73,South East,Botswana,BW,-24.65451,,Gaborone,25.90859
+74,South East,Botswana,BW,-24.65451,,Gaborone,25.90859
+75,South East,Botswana,BW,-24.65451,,Gaborone,25.90859
+76,Centre,Burkina Faso,BF,12.36566,Kadiogo Province,Ouagadougou,-1.53388
+77,Centre,Burkina Faso,BF,12.36566,Kadiogo Province,Ouagadougou,-1.53388
+78,Centre,Burkina Faso,BF,12.36566,Kadiogo Province,Ouagadougou,-1.53388
+79,Centre,Burkina Faso,BF,12.36566,Kadiogo Province,Ouagadougou,-1.53388
+80,Centre,Burkina Faso,BF,12.36566,Kadiogo Province,Ouagadougou,-1.53388
+81,High-Basins,Burkina Faso,BF,11.17715,Province du Houet,Bobo-Dioulasso,-4.2979
+82,High-Basins,Burkina Faso,BF,11.17715,Province du Houet,Bobo-Dioulasso,-4.2979
+83,High-Basins,Burkina Faso,BF,11.17715,Province du Houet,Bobo-Dioulasso,-4.2979
+84,High-Basins,Burkina Faso,BF,11.17715,Province du Houet,Bobo-Dioulasso,-4.2979
+85,High-Basins,Burkina Faso,BF,11.17715,Province du Houet,Bobo-Dioulasso,-4.2979
+86,Centre-Ouest,Burkina Faso,BF,12.25263,Province du Boulkiemde,Koudougou,-2.36272
+87,Centre,Burkina Faso,BF,12.36566,Kadiogo Province,Ouagadougou,-1.53388
+88,Centre,Burkina Faso,BF,12.36566,Kadiogo Province,Ouagadougou,-1.53388
+89,Centre,Burkina Faso,BF,12.36566,Kadiogo Province,Ouagadougou,-1.53388
+90,Centre,Burkina Faso,BF,12.36566,Kadiogo Province,Ouagadougou,-1.53388
+91,Centre,Burkina Faso,BF,12.36566,Kadiogo Province,Ouagadougou,-1.53388
+92,Centre,Burkina Faso,BF,12.36566,Kadiogo Province,Ouagadougou,-1.53388
+93,Bujumbura Mairie,Burundi,BI,-3.3822,,Bujumbura,29.3644
+94,Gitega,Burundi,BI,-3.4264,,Gitega,29.9308
+95,Bujumbura Mairie,Burundi,BI,-3.3822,,Bujumbura,29.3644
+96,Bujumbura Mairie,Burundi,BI,-3.3822,,Bujumbura,29.3644
+97,Muramvya,Burundi,BI,-3.2682,,Muramvya,29.6079
+98,Muramvya,Burundi,BI,-3.2682,,Muramvya,29.6079
+99,Muramvya,Burundi,BI,-3.2682,,Muramvya,29.6079
+100,Gitega,Burundi,BI,-3.4264,,Gitega,29.9308
+101,Gitega,Burundi,BI,-3.4264,,Gitega,29.9308
+102,Bujumbura Mairie,Burundi,BI,-3.3822,,Bujumbura,29.3644
+103,Bujumbura Mairie,Burundi,BI,-3.3822,,Bujumbura,29.3644
+104,Bujumbura Mairie,Burundi,BI,-3.3822,,Bujumbura,29.3644
+105,North-West Province,Cameroon,CM,5.9597,,Bamenda,10.14597
+106,South-West Province,Cameroon,CM,5.3299,,Nguti,9.4185
+107,Centre,Cameroon,CM,3.86667,,Yaounde,11.51667
+108,North-West Province,Cameroon,CM,5.9597,,Bamenda,10.14597
+109,North-West Province,Cameroon,CM,6.01667,,Mbengwi,10
+110,Adamaoua,Cameroon,CM,7.36667,,Tignere,12.65
+111,Centre,Cameroon,CM,3.86667,,Yaounde,11.51667
+112,North-West Province,Cameroon,CM,5.9597,,Bamenda,10.14597
+113,South-West Province,Cameroon,CM,4.1527,,Buea,9.241
+114,South-West Province,Cameroon,CM,4.1527,,Buea,9.241
+115,South-West Province,Cameroon,CM,4.1527,,Buea,9.241
+116,South-West Province,Cameroon,CM,4.1527,,Buea,9.241
+117,South-West Province,Cameroon,CM,4.1527,,Buea,9.241
+118,South-West Province,Cameroon,CM,4.1527,,Buea,9.241
+119,Littoral,Cameroon,CM,4.04827,,Douala,9.70428
+120,Littoral,Cameroon,CM,4.04827,,Douala,9.70428
+121,Littoral,Cameroon,CM,4.04827,,Douala,9.70428
+122,Littoral,Cameroon,CM,4.04827,,Douala,9.70428
+123,Centre,Cameroon,CM,3.86667,,Yaounde,11.51667
+124,Centre,Cameroon,CM,3.86667,,Yaounde,11.51667
+125,Bangui,Central African Republic,CF,4.36122,,Bangui,18.55496
+126,Bangui,Central African Republic,CF,4.36122,,Bangui,18.55496
+127,Batha,Chad,TD,13.2154,,Ati,18.3353
+128,Chari-Baguirmi,Chad,TD,12.10672,,N'Djamena,15.0444
+129,Chari-Baguirmi,Chad,TD,12.10672,,N'Djamena,15.0444
+130,Chari-Baguirmi,Chad,TD,12.10672,,N'Djamena,15.0444
+131,Chari-Baguirmi,Chad,TD,12.10672,,N'Djamena,15.0444
+132,Chari-Baguirmi,Chad,TD,12.10672,,N'Djamena,15.0444
+133,Chari-Baguirmi,Chad,TD,12.10672,,N'Djamena,15.0444
+134,Grande Comore,Comoros,KM,-11.71639,,Mavingouni,43.2525
+135,Grande Comore,Comoros,KM,-11.71639,,Mavingouni,43.2525
+136,Brazzaville,Republic of Congo,CG,-4.26613,,Brazzaville,15.28318
+137,Bouenza,Republic of Congo,CG,-4.18396,,Nkayi,13.2859
+138,Nord Kivu,Democratic Republic of the Congo,CD,-1.67409,,Goma,29.22845
+139,Kinshasa,Democratic Republic of the Congo,CD,-4.32758,,Kinshasa,15.31357
+140,Eastern Province,Democratic Republic of the Congo,CD,1.55941,,Bunia,30.25224
+141,Eastern Province,Democratic Republic of the Congo,CD,1.55941,,Bunia,30.25224
+142,South Kivu,Democratic Republic of the Congo,CD,-2.49077,,Bukavu,28.84281
+143,Eastern Province,Democratic Republic of the Congo,CD,0.51528,,Kisangani,25.19099
+144,Kinshasa,Democratic Republic of the Congo,CD,-4.32758,,Kinshasa,15.31357
+145,Kinshasa,Democratic Republic of the Congo,CD,-4.32758,,Kinshasa,15.31357
+146,Kinshasa,Democratic Republic of the Congo,CD,-4.32758,,Kinshasa,15.31357
+147,Kinshasa,Democratic Republic of the Congo,CD,-4.38361,,Masina,15.39139
+148,Kinshasa,Democratic Republic of the Congo,CD,-4.32758,,Kinshasa,15.31357
+149,Kinshasa,Democratic Republic of the Congo,CD,-4.32758,,Kinshasa,15.31357
+150,Kinshasa,Democratic Republic of the Congo,CD,-4.32758,,Kinshasa,15.31357
+151,Nord Kivu,Democratic Republic of the Congo,CD,-1.67409,,Goma,29.22845
+152,Kinshasa,Democratic Republic of the Congo,CD,-4.32758,,Kinshasa,15.31357
+153,Kasai-Oriental,Democratic Republic of the Congo,CD,-3.52105,,Lodja,23.6005
+154,Bas-Congo,Democratic Republic of the Congo,CD,-5.79949,,Matadi,13.44068
+155,Kinshasa,Democratic Republic of the Congo,CD,-4.32758,,Kinshasa,15.31357
+156,Kasai-Oriental,Democratic Republic of the Congo,CD,-3.52105,,Lodja,23.6005
+157,Kasai-Oriental,Democratic Republic of the Congo,CD,-5.38771,,Lubao,25.74885
+158,Kinshasa,Democratic Republic of the Congo,CD,-4.32758,,Kinshasa,15.31357
+159,Kasai-Oriental,Democratic Republic of the Congo,CD,-6.13603,,Mbuji-Mayi,23.58979
+160,Kasai-Oriental,Democratic Republic of the Congo,CD,-6.13603,,Mbuji-Mayi,23.58979
+161,Kinshasa,Democratic Republic of the Congo,CD,-4.32758,,Kinshasa,15.31357
+162,Kinshasa,Democratic Republic of the Congo,CD,-4.38361,,Masina,15.39139
+163,Kinshasa,Democratic Republic of the Congo,CD,-4.38361,,Masina,15.39139
+164,Kinshasa,Democratic Republic of the Congo,CD,-4.38361,,Masina,15.39139
+165,Kinshasa,Democratic Republic of the Congo,CD,-4.38361,,Masina,15.39139
+166,Kinshasa,Democratic Republic of the Congo,CD,-4.38361,,Masina,15.39139
+167,Kinshasa,Democratic Republic of the Congo,CD,-4.38361,,Masina,15.39139
+168,Kinshasa,Democratic Republic of the Congo,CD,-4.38361,,Masina,15.39139
+169,Eastern Province,Democratic Republic of the Congo,CD,0.51528,,Kisangani,25.19099
+170,Eastern Province,Democratic Republic of the Congo,CD,0.51528,,Kisangani,25.19099
+171,Dix-Huit Montagnes,Ivory Coast,CI,7.41251,,Man,-7.55383
+172,Lagunes,Ivory Coast,CI,5.30966,,Abidjan,-4.01266
+173,Dix-Huit Montagnes,Ivory Coast,CI,6.74202,,Duekoue,-7.34918
+174,Haut-Sassandra,Ivory Coast,CI,6.49224,,Issia,-6.58558
+175,Vallee du Bandama,Ivory Coast,CI,7.67395,,Beoumi,-5.58085
+176,Vallee du Bandama,Ivory Coast,CI,7.67395,,Beoumi,-5.58085
+177,Vallee du Bandama,Ivory Coast,CI,7.67395,,Beoumi,-5.58085
+178,Vallee du Bandama,Ivory Coast,CI,7.67395,,Beoumi,-5.58085
+179,Lagunes,Ivory Coast,CI,5.30966,,Abidjan,-4.01266
+180,Vallee du Bandama,Ivory Coast,CI,7.69385,,Bouake,-5.03031
+181,Lagunes,Ivory Coast,CI,5.32556,,Dabou,-4.37685
+182,Lagunes,Ivory Coast,CI,5.30966,,Abidjan,-4.01266
+183,Lagunes,Ivory Coast,CI,5.30966,,Abidjan,-4.01266
+184,Lagunes,Ivory Coast,CI,5.30966,,Abidjan,-4.01266
+185,Lagunes,Ivory Coast,CI,5.30966,,Abidjan,-4.01266
+186,Haut-Sassandra,Ivory Coast,CI,7.38194,,Vavoua,-6.47778
+187,Lagunes,Ivory Coast,CI,5.30966,,Abidjan,-4.01266
+188,Lagunes,Ivory Coast,CI,5.30966,,Abidjan,-4.01266
+189,Obock,Djibouti,DJ,11.96306,,Obock,43.29056
+190,Asyut,Egypt,EG,27.3104,,Manfalut,30.97004
+191,Muhafazat al Qahirah,Egypt,EG,30.06263,,Cairo,31.24967
+192,Asyut,Egypt,EG,27.3104,,Manfalut,30.97004
+193,Muhafazat al Qahirah,Egypt,EG,30.06263,,Cairo,31.24967
+194,Asyut,Egypt,EG,27.3104,,Manfalut,30.97004
+195,Asyut,Egypt,EG,27.3104,,Manfalut,30.97004
+196,Muhafazat al Qahirah,Egypt,EG,30.06263,,Cairo,31.24967
+197,Muhafazat al Qahirah,Egypt,EG,30.06263,,Cairo,31.24967
+198,Al Jizah,Egypt,EG,30.00808,,Al Jizah,31.21093
+199,Muhafazat al Qahirah,Egypt,EG,30.06263,,Cairo,31.24967
+200,Al Buhayrah,Egypt,EG,30.9128,,Hawsh `Isa,30.29019
+201,Asyut,Egypt,EG,27.3104,,Manfalut,30.97004
+202,Muhafazat al Qahirah,Egypt,EG,30.06263,,Cairo,31.24967
+203,Asyut,Egypt,EG,27.3104,,Manfalut,30.97004
+204,Muhafazat al Qahirah,Egypt,EG,30.06263,,Cairo,31.24967
+205,Muhafazat al Qahirah,Egypt,EG,30.06263,,Cairo,31.24967
+206,Muhafazat al Qahirah,Egypt,EG,30.06263,,Cairo,31.24967
+207,Muhafazat al Qahirah,Egypt,EG,30.06263,,Cairo,31.24967
+208,Muhafazat al Qahirah,Egypt,EG,30.06263,,Cairo,31.24967
+209,Muhafazat al Qahirah,Egypt,EG,30.06263,,Cairo,31.24967
+210,Muhafazat al Qahirah,Egypt,EG,30.06263,,Cairo,31.24967
+211,Alexandria,Egypt,EG,31.21564,,Alexandria,29.95527
+212,Muhafazat al Qahirah,Egypt,EG,30.06263,,Cairo,31.24967
+213,Muhafazat al Qahirah,Egypt,EG,30.06263,,Cairo,31.24967
+214,Muhafazat al Qahirah,Egypt,EG,30.06263,,Cairo,31.24967
+215,Muhafazat al Qahirah,Egypt,EG,30.06263,,Cairo,31.24967
+216,Muhafazat al Qahirah,Egypt,EG,30.06263,,Cairo,31.24967
+217,Muhafazat al Qahirah,Egypt,EG,30.06263,,Cairo,31.24967
+218,Muhafazat al Qahirah,Egypt,EG,30.06263,,Cairo,31.24967
+219,Muhafazat al Qahirah,Egypt,EG,30.06263,,Cairo,31.24967
+220,Muhafazat al Qahirah,Egypt,EG,30.06263,,Cairo,31.24967
+221,Alexandria,Egypt,EG,31.21564,,Alexandria,29.95527
+222,Muhafazat al Qalyubiyah,Egypt,EG,30.21035,,Al Khankah,31.36812
+223,Muhafazat al Qalyubiyah,Egypt,EG,30.21035,,Al Khankah,31.36812
+224,Muhafazat al Qalyubiyah,Egypt,EG,30.21035,,Al Khankah,31.36812
+225,Muhafazat al Qalyubiyah,Egypt,EG,30.21035,,Al Khankah,31.36812
+226,Muhafazat al Qalyubiyah,Egypt,EG,30.21035,,Al Khankah,31.36812
+227,Muhafazat al Qalyubiyah,Egypt,EG,30.21035,,Al Khankah,31.36812
+228,Muhafazat al Qalyubiyah,Egypt,EG,30.21035,,Al Khankah,31.36812
+229,Muhafazat al Qalyubiyah,Egypt,EG,30.21035,,Al Khankah,31.36812
+230,Muhafazat al Qalyubiyah,Egypt,EG,30.21035,,Al Khankah,31.36812
+231,Muhafazat al Qalyubiyah,Egypt,EG,30.45906,,Banha,31.17858
+232,Muhafazat al Qalyubiyah,Egypt,EG,30.21035,,Al Khankah,31.36812
+233,Al Jizah,Egypt,EG,30.00808,,Al Jizah,31.21093
+234,Al Jizah,Egypt,EG,30.00808,,Al Jizah,31.21093
+235,Al Jizah,Egypt,EG,30.00808,,Al Jizah,31.21093
+236,Al Jizah,Egypt,EG,30.00808,,Al Jizah,31.21093
+237,Al Jizah,Egypt,EG,30.00808,,Al Jizah,31.21093
+238,Al Jizah,Egypt,EG,30.00808,,Al Jizah,31.21093
+239,Al Jizah,Egypt,EG,30.00808,,Al Jizah,31.21093
+240,Al Jizah,Egypt,EG,30.00808,,Al Jizah,31.21093
+241,Al Jizah,Egypt,EG,30.00808,,Al Jizah,31.21093
+242,Al Jizah,Egypt,EG,30.00808,,Al Jizah,31.21093
+243,Al Jizah,Egypt,EG,30.00808,,Al Jizah,31.21093
+244,Muhafazat al Qahirah,Egypt,EG,30.06263,,Cairo,31.24967
+245,Muhafazat al Qahirah,Egypt,EG,29.84144,,Halwan,31.30084
+246,Muhafazat al Qahirah,Egypt,EG,29.84144,,Halwan,31.30084
+247,Muhafazat ad Daqahliyah,Egypt,EG,31.0539,,Talkha,31.37787
+248,Muhafazat ad Daqahliyah,Egypt,EG,31.0539,,Talkha,31.37787
+249,Muhafazat ad Daqahliyah,Egypt,EG,31.0539,,Talkha,31.37787
+250,Al Minya,Egypt,EG,28.10988,,Al Minya,30.7503
+251,Eastern Province,Egypt,EG,30.58768,,Zagazig,31.502
+252,Eastern Province,Egypt,EG,30.58768,,Zagazig,31.502
+253,Bioko Norte,Equatorial Guinea,GQ,3.75,,Malabo,8.78333
+254,Oromiya,Ethiopia,ET,8.81667,,Gelemso,40.51667
+255,Oromiya,Ethiopia,ET,8.81667,,Gelemso,40.51667
+256,Oromiya,Ethiopia,ET,5.63418,,Hagere Maryam,38.23603
+257,Adis Abeba,Ethiopia,ET,9.02497,,Addis Ababa,38.74689
+258,Oromiya,Ethiopia,ET,8.81667,,Gelemso,40.51667
+259,Oromiya,Ethiopia,ET,8.81667,,Gelemso,40.51667
+260,Adis Abeba,Ethiopia,ET,9.02497,,Addis Ababa,38.74689
+261,Amhara,Ethiopia,ET,11.59364,,Bahir Dar,37.39077
+262,Adis Abeba,Ethiopia,ET,9.02497,,Addis Ababa,38.74689
+263,Oromiya,Ethiopia,ET,8.55,,Nazret,39.26667
+264,Adis Abeba,Ethiopia,ET,9.02497,,Addis Ababa,38.74689
+265,Adis Abeba,Ethiopia,ET,9.02497,,Addis Ababa,38.74689
+266,Adis Abeba,Ethiopia,ET,9.02497,,Addis Ababa,38.74689
+267,Adis Abeba,Ethiopia,ET,9.02497,,Addis Ababa,38.74689
+268,Oromiya,Ethiopia,ET,8.98333,,Hagere Hiywet,37.85
+269,Oromiya,Ethiopia,ET,8.98333,,Hagere Hiywet,37.85
+270,Amhara,Ethiopia,ET,11.59364,,Bahir Dar,37.39077
+271,Harari,Ethiopia,ET,9.31387,,Harar,42.11815
+272,Harari,Ethiopia,ET,9.31387,,Harar,42.11815
+273,Harari,Ethiopia,ET,9.31387,,Harar,42.11815
+274,Oromiya,Ethiopia,ET,7.66667,,Jima,36.83333
+275,Oromiya,Ethiopia,ET,7.66667,,Jima,36.83333
+276,Adis Abeba,Ethiopia,ET,9.02497,,Addis Ababa,38.74689
+277,Ogooue-Ivindo,Gabon,GA,-0.09207,,Booue,11.93846
+278,Ogooue-Ivindo,Gabon,GA,-0.09207,,Booue,11.93846
+279,Ogooue-Ivindo,Gabon,GA,-0.09207,,Booue,11.93846
+280,Estuaire,Gabon,GA,0.39241,,Libreville,9.45356
+281,Estuaire,Gabon,GA,0.39241,,Libreville,9.45356
+282,Estuaire,Gabon,GA,0.39241,,Libreville,9.45356
+283,Cuvette,Republic of Congo,CG,-0.48193,,Owando,15.89988
+284,Western,Gambia,GM,13.27136,,Brikama,-16.64944
+285,Banjul,Gambia,GM,13.47806,,Bakau,-16.68194
+286,Ashanti,Ghana,GH,7.38558,,Ejura,-1.35617
+287,Ashanti,Ghana,GH,7.38558,,Ejura,-1.35617
+288,Ashanti,Ghana,GH,7.38558,,Ejura,-1.35617
+289,Ashanti,Ghana,GH,7.38558,,Ejura,-1.35617
+290,Ashanti,Ghana,GH,7.38558,,Ejura,-1.35617
+291,Ashanti,Ghana,GH,7.38558,,Ejura,-1.35617
+292,Ashanti,Ghana,GH,7.38558,,Ejura,-1.35617
+293,Ashanti,Ghana,GH,7.38558,,Ejura,-1.35617
+294,Ashanti,Ghana,GH,7.38558,,Ejura,-1.35617
+295,Ashanti,Ghana,GH,6.73333,,Mamponteng,-1.55
+296,Greater Accra,Ghana,GH,5.55602,,Accra,-0.1969
+297,Greater Accra,Ghana,GH,5.6658,,Medina Estates,-0.16307
+298,Greater Accra,Ghana,GH,5.55602,,Accra,-0.1969
+299,Greater Accra,Ghana,GH,5.55602,,Accra,-0.1969
+300,Greater Accra,Ghana,GH,5.55602,,Accra,-0.1969
+301,Greater Accra,Ghana,GH,5.65003,,Dome,-0.2361
+302,Greater Accra,Ghana,GH,5.6658,,Medina Estates,-0.16307
+303,Greater Accra,Ghana,GH,5.55602,,Accra,-0.1969
+304,Greater Accra,Ghana,GH,5.55602,,Accra,-0.1969
+305,Greater Accra,Ghana,GH,5.6658,,Medina Estates,-0.16307
+306,Greater Accra,Ghana,GH,5.6658,,Medina Estates,-0.16307
+307,Greater Accra,Ghana,GH,5.55602,,Accra,-0.1969
+308,Greater Accra,Ghana,GH,5.6658,,Medina Estates,-0.16307
+309,Greater Accra,Ghana,GH,5.6658,,Medina Estates,-0.16307
+310,Greater Accra,Ghana,GH,5.6658,,Medina Estates,-0.16307
+311,Greater Accra,Ghana,GH,5.55602,,Accra,-0.1969
+312,Greater Accra,Ghana,GH,5.55602,,Accra,-0.1969
+313,Ashanti,Ghana,GH,6.73453,,Tafo,-1.61275
+314,Ashanti,Ghana,GH,6.73333,,Mamponteng,-1.55
+315,,Ghana,GH,6.45335,,Bekwai,-1.57741
+316,Upper East,Ghana,GH,10.78556,,Bolgatanga,-0.85139
+317,Upper East,Ghana,GH,10.78556,,Bolgatanga,-0.85139
+318,Central,Ghana,GH,5.10535,,Cape Coast,-1.2466
+319,Upper East,Ghana,GH,10.89557,,Navrongo,-1.0921
+320,Northern,Ghana,GH,9.62441,,Savelugu,-0.8253
+321,Eastern,Ghana,GH,6.09408,,Koforidua,-0.25913
+322,Eastern,Ghana,GH,6.09408,,Koforidua,-0.25913
+323,Ashanti,Ghana,GH,6.61667,,Konongo,-1.21667
+324,Upper East,Ghana,GH,11.0616,,Bawku,-0.24169
+325,Ashanti,Ghana,GH,6.73333,,Mamponteng,-1.55
+326,Ashanti,Ghana,GH,6.68848,,Kumasi,-1.62443
+327,Ashanti,Ghana,GH,6.73333,,Mamponteng,-1.55
+328,Ashanti,Ghana,GH,6.68848,,Kumasi,-1.62443
+329,Ashanti,Ghana,GH,6.73453,,Tafo,-1.61275
+330,Ashanti,Ghana,GH,6.68848,,Kumasi,-1.62443
+331,Ashanti,Ghana,GH,6.68848,,Kumasi,-1.62443
+332,Ashanti,Ghana,GH,6.73333,,Mamponteng,-1.55
+333,Ashanti,Ghana,GH,6.68848,,Kumasi,-1.62443
+334,Ashanti,Ghana,GH,6.68848,,Kumasi,-1.62443
+335,Ashanti,Ghana,GH,6.73333,,Mamponteng,-1.55
+336,Southwest,Burkina Faso,BF,10.96209,Province de la Bougouriba,Diebougou,-3.24967
+337,Ashanti,Ghana,GH,7.06273,,Mampong,-1.4001
+338,Upper East,Ghana,GH,10.78556,,Bolgatanga,-0.85139
+339,Upper East,Ghana,GH,10.89557,,Navrongo,-1.0921
+340,Northern,Ghana,GH,9.40079,,Tamale,-0.8393
+341,Northern,Ghana,GH,9.40079,,Tamale,-0.8393
+342,Ashanti,Ghana,GH,7.38558,,Ejura,-1.35617
+343,Conakry,Guinea,GN,9.53795,,Conakry,-13.67729
+344,Conakry,Guinea,GN,9.53795,,Conakry,-13.67729
+345,Kankan,Guinea,GN,9.65,Kankan Prefecture,Tokonou,-9.78333
+346,Conakry,Guinea,GN,9.53795,,Conakry,-13.67729
+347,Kankan,Guinea,GN,9.65,Kankan Prefecture,Tokonou,-9.78333
+348,Conakry,Guinea,GN,9.53795,,Conakry,-13.67729
+349,Conakry,Guinea,GN,9.53795,,Conakry,-13.67729
+350,Conakry,Guinea,GN,9.53795,,Conakry,-13.67729
+351,Kankan,Guinea,GN,10.38542,Kankan Prefecture,Kankan,-9.30568
+352,Kankan,Guinea,GN,10.38542,Kankan Prefecture,Kankan,-9.30568
+353,Kankan,Guinea,GN,10.38542,Kankan Prefecture,Kankan,-9.30568
+354,Quinara,Guinea-Bissau,GW,11.58889,,Buba,-14.99583
+355,Bissau,Guinea-Bissau,GW,11.86357,,Bissau,-15.59767
+356,Quinara,Guinea-Bissau,GW,11.58889,,Buba,-14.99583
+357,Isiolo,Kenya,KE,0.23206,,Maua,37.94052
+358,Isiolo,Kenya,KE,0.23206,,Maua,37.94052
+359,Isiolo,Kenya,KE,0.23206,,Maua,37.94052
+360,Isiolo,Kenya,KE,0.23206,,Maua,37.94052
+361,Isiolo,Kenya,KE,0.23206,,Maua,37.94052
+362,Isiolo,Kenya,KE,0.23206,,Maua,37.94052
+363,Isiolo,Kenya,KE,0.23206,,Maua,37.94052
+364,Nairobi Area,Kenya,KE,-1.28333,,Nairobi,36.81667
+365,Kajiado,Kenya,KE,-1.36175,,Ngong,36.6566
+366,Tharaka District,Kenya,KE,-0.33316,,Chuka,37.64587
+367,Machakos,Kenya,KE,-1.4563,,Athi River,36.97826
+368,Nairobi Area,Kenya,KE,-1.28333,,Nairobi,36.81667
+369,Garissa,Kenya,KE,-0.45275,,Garissa,39.64601
+370,Isiolo,Kenya,KE,0.35462,,Isiolo,37.58218
+371,Isiolo,Kenya,KE,0.35462,,Isiolo,37.58218
+372,Nairobi Area,Kenya,KE,-1.28333,,Nairobi,36.81667
+373,Nairobi Area,Kenya,KE,-1.28333,,Nairobi,36.81667
+374,Nairobi Area,Kenya,KE,-1.28333,,Nairobi,36.81667
+375,Kiambu,Kenya,KE,-1.16667,,Kiambu,36.83333
+376,Kiambu,Kenya,KE,-1.16667,,Kiambu,36.83333
+377,Bungoma,Kenya,KE,0.5635,,Bungoma,34.56055
+378,Kisumu,Kenya,KE,-0.10221,,Kisumu,34.76171
+379,Nairobi Area,Kenya,KE,-1.03326,,Thika,37.06933
+380,Nakuru,Kenya,KE,-0.28333,,Nakuru,36.06667
+381,Nairobi Area,Kenya,KE,-1.03326,,Thika,37.06933
+382,Siaya,Kenya,KE,0.06116,,Siaya,34.28823
+383,Siaya,Kenya,KE,0.09906,,Yala,34.53757
+384,Meru,Kenya,KE,0.04626,,Meru,37.65587
+385,Meru,Kenya,KE,0.04626,,Meru,37.65587
+386,Western,Ghana,GH,4.88447,,Takoradi,-1.75536
+387,Nairobi Area,Kenya,KE,-1.03326,,Thika,37.06933
+388,Nairobi Area,Kenya,KE,-1.03326,,Thika,37.06933
+389,Siaya,Kenya,KE,0.06116,,Siaya,34.28823
+390,West Pokot,Kenya,KE,1.30774,,Chepareria,35.2039
+391,Bungoma,Kenya,KE,0.5635,,Bungoma,34.56055
+392,Mombasa,Kenya,KE,-4.05466,,Mombasa,39.66359
+393,Mombasa,Kenya,KE,-4.05466,,Mombasa,39.66359
+394,Uasin Gishu,Kenya,KE,0.52036,,Eldoret,35.26993
+395,Nairobi Area,Kenya,KE,-1.28333,,Nairobi,36.81667
+396,Nairobi Area,Kenya,KE,-1.28333,,Nairobi,36.81667
+397,Nairobi Area,Kenya,KE,-1.28333,,Nairobi,36.81667
+398,Nairobi Area,Kenya,KE,-1.28333,,Nairobi,36.81667
+399,Nairobi Area,Kenya,KE,-1.28333,,Nairobi,36.81667
+400,Maseru,Lesotho,LS,-29.31667,,Maseru,27.48333
+401,Thaba-Tseka,Lesotho,LS,-29.52204,,Thaba-Tseka,28.6084
+402,Maseru,Lesotho,LS,-29.31667,,Maseru,27.48333
+403,Maseru,Lesotho,LS,-29.31667,,Maseru,27.48333
+404,Maseru,Lesotho,LS,-29.61667,,Nako,27.76667
+405,Maseru,Lesotho,LS,-29.31667,,Maseru,27.48333
+406,Maseru,Lesotho,LS,-29.31667,,Maseru,27.48333
+407,Maseru,Lesotho,LS,-29.31667,,Maseru,27.48333
+408,Maseru,Lesotho,LS,-29.31667,,Maseru,27.48333
+409,Maseru,Lesotho,LS,-29.31667,,Maseru,27.48333
+410,Maseru,Lesotho,LS,-29.31667,,Maseru,27.48333
+411,Maseru,Lesotho,LS,-29.61667,,Nako,27.76667
+412,Maseru,Lesotho,LS,-29.61667,,Nako,27.76667
+413,Maseru,Lesotho,LS,-29.61667,,Nako,27.76667
+414,Maseru,Lesotho,LS,-29.61667,,Nako,27.76667
+415,Maseru,Lesotho,LS,-29.61667,,Nako,27.76667
+416,Maseru,Lesotho,LS,-29.61667,,Nako,27.76667
+417,Maseru,Lesotho,LS,-29.61667,,Nako,27.76667
+418,Maseru,Lesotho,LS,-29.61667,,Nako,27.76667
+419,Montserrado,Liberia,LR,6.30054,,Monrovia,-10.7969
+420,Bong,Liberia,LR,6.99556,,Gbarnga,-9.47222
+421,Montserrado,Liberia,LR,6.30054,,Monrovia,-10.7969
+422,Montserrado,Liberia,LR,6.30054,,Monrovia,-10.7969
+423,Montserrado,Liberia,LR,6.30054,,Monrovia,-10.7969
+424,Montserrado,Liberia,LR,6.30054,,Monrovia,-10.7969
+425,Montserrado,Liberia,LR,6.30054,,Monrovia,-10.7969
+426,Bong,Liberia,LR,6.99556,,Gbarnga,-9.47222
+427,Bong,Liberia,LR,6.99556,,Gbarnga,-9.47222
+428,Montserrado,Liberia,LR,6.30054,,Monrovia,-10.7969
+429,Montserrado,Liberia,LR,6.30054,,Monrovia,-10.7969
+430,Montserrado,Liberia,LR,6.30054,,Monrovia,-10.7969
+431,Montserrado,Liberia,LR,6.30054,,Monrovia,-10.7969
+432,Montserrado,Liberia,LR,6.30054,,Monrovia,-10.7969
+433,Montserrado,Liberia,LR,6.30054,,Monrovia,-10.7969
+434,Montserrado,Liberia,LR,6.30054,,Monrovia,-10.7969
+435,Montserrado,Liberia,LR,6.30054,,Monrovia,-10.7969
+436,Montserrado,Liberia,LR,6.30054,,Monrovia,-10.7969
+437,Montserrado,Liberia,LR,6.30054,,Monrovia,-10.7969
+438,Montserrado,Liberia,LR,6.30054,,Monrovia,-10.7969
+439,Montserrado,Liberia,LR,6.30054,,Monrovia,-10.7969
+440,Montserrado,Liberia,LR,6.30054,,Monrovia,-10.7969
+441,Montserrado,Liberia,LR,6.30054,,Monrovia,-10.7969
+442,Al Jabal al Akhdar,Libya,LY,32.76272,,Al Bayda',21.75506
+443,Banghazi,Libya,LY,32.11486,,Benghazi,20.06859
+444,Tripoli,Libya,LY,32.87519,,Tripoli,13.18746
+445,Banghazi,Libya,LY,32.11486,,Benghazi,20.06859
+446,Tripoli,Libya,LY,32.87519,,Tripoli,13.18746
+447,Banghazi,Libya,LY,32.11486,,Benghazi,20.06859
+448,Tripoli,Libya,LY,32.87519,,Tripoli,13.18746
+449,Tripoli,Libya,LY,32.87519,,Tripoli,13.18746
+450,Sabha,Libya,LY,27.03766,,Sabha,14.42832
+451,Sabha,Libya,LY,27.03766,,Sabha,14.42832
+452,Tripoli,Libya,LY,32.87519,,Tripoli,13.18746
+453,Analamanga,Madagascar,MG,-18.91368,,Antananarivo,47.53613
+454,Diana,Madagascar,MG,-12.2787,,Antsiranana,49.29171
+455,Diana,Madagascar,MG,-12.2787,,Antsiranana,49.29171
+456,Northern Region,Malawi,MW,-11.46556,Mzimba District,Mzuzu,34.02071
+457,Southern Region,Malawi,MW,-15.78499,Blantyre District,Blantyre,35.00854
+458,Central Region,Malawi,MW,-14.3779,Dedza District,Dedza,34.33322
+459,Southern Region,Malawi,MW,-15.38596,Zomba District,Zomba,35.3188
+460,Southern Region,Malawi,MW,-15.38596,Zomba District,Zomba,35.3188
+461,Southern Region,Malawi,MW,-15.78499,Blantyre District,Blantyre,35.00854
+462,Central Region,Malawi,MW,-13.79841,Mchinji District,Mchinji,32.88019
+463,Southern Region,Malawi,MW,-15.38596,Zomba District,Zomba,35.3188
+464,Southern Region,Malawi,MW,-15.38596,Zomba District,Zomba,35.3188
+465,Southern Region,Malawi,MW,-15.78499,Blantyre District,Blantyre,35.00854
+466,Southern Region,Malawi,MW,-15.78499,Blantyre District,Blantyre,35.00854
+467,Southern Region,Malawi,MW,-16.03163,Mulanje District,Mulanje,35.5
+468,Southern Region,Malawi,MW,-15.78499,Blantyre District,Blantyre,35.00854
+469,Central Region,Malawi,MW,-13.96692,Lilongwe District,Lilongwe,33.78725
+470,Southern Region,Malawi,MW,-15.78721,,Makata,35.03046
+471,Central Region,Malawi,MW,-13.96692,Lilongwe District,Lilongwe,33.78725
+472,Bamako,Mali,ML,12.65,,Bamako,-8
+473,Gao,Mali,ML,16.27167,,Gao,-0.04472
+474,Gao,Mali,ML,16.27167,,Gao,-0.04472
+475,Bamako,Mali,ML,12.65,,Bamako,-8
+476,Tombouctou,Mali,ML,16.41453,,Goundam,-3.67075
+477,Nouakchott,Mauritania,MR,18.08581,,Nouakchott,-15.9785
+478,Nouakchott,Mauritania,MR,18.08581,,Nouakchott,-15.9785
+479,Nouakchott,Mauritania,MR,18.08581,,Nouakchott,-15.9785
+480,Nouakchott,Mauritania,MR,18.08581,,Nouakchott,-15.9785
+481,Nouakchott,Mauritania,MR,18.08581,,Nouakchott,-15.9785
+482,Nouakchott,Mauritania,MR,18.08581,,Nouakchott,-15.9785
+483,Nouakchott,Mauritania,MR,18.08581,,Nouakchott,-15.9785
+484,Nouakchott,Mauritania,MR,18.08581,,Nouakchott,-15.9785
+485,Port Louis,Mauritius,MU,-20.16194,,Port Louis,57.49889
+486,Plaines Wilhems,Mauritius,MU,-20.24494,,Ebene,57.49163
+487,Flacq,Mauritius,MU,-20.18972,,Centre de Flacq,57.71444
+488,Plaines Wilhems,Mauritius,MU,-20.24494,,Ebene,57.49163
+489,Plaines Wilhems,Mauritius,MU,-20.24494,,Ebene,57.49163
+490,Plaines Wilhems,Mauritius,MU,-20.3325,,Midlands,57.55833
+491,Tadla-Azilal,Morocco,MA,31.73443,Azilal Province,Demnate,-7.00505
+492,Souss-Massa-Draa,Morocco,MA,30.35535,Inezgane-Ait Mellou,Inezgane,-9.53639
+493,Fes-Boulemane,Morocco,MA,34.03715,Fes,Fes,-4.9998
+494,Souss-Massa-Draa,Morocco,MA,30.42018,Agadir-Ida-ou-Tnan,Agadir,-9.59815
+495,Taza-Al Hoceima-Taounate,Morocco,MA,35.25165,,Al Hoceima,-3.93723
+496,Rabat-Sale-Zemmour-Zaer,Morocco,MA,34.01325,Rabat,Rabat,-6.83255
+497,Rabat-Sale-Zemmour-Zaer,Morocco,MA,34.01325,Rabat,Rabat,-6.83255
+498,Tadla-Azilal,Morocco,MA,31.73443,Azilal Province,Demnate,-7.00505
+499,Tadla-Azilal,Morocco,MA,31.73443,Azilal Province,Demnate,-7.00505
+500,,Western Sahara,EH,26.73841,,Smara,-11.67194
+501,Rabat-Sale-Zemmour-Zaer,Morocco,MA,34.01325,Rabat,Rabat,-6.83255
+502,Rabat-Sale-Zemmour-Zaer,Morocco,MA,34.01325,Rabat,Rabat,-6.83255
+503,Fes-Boulemane,Morocco,MA,34.03715,Fes,Fes,-4.9998
+504,Fes-Boulemane,Morocco,MA,34.03715,Fes,Fes,-4.9998
+505,Oued ed Dahab-Lagouira,Morocco,MA,30.41071,,Dakhla,-9.55572
+506,Doukkala-Abda,Morocco,MA,32.29939,Safi,Safi,-9.23718
+507,Tadla-Azilal,Morocco,MA,32.33725,Beni-Mellal,Beni Mellal,-6.34983
+508,Rabat-Sale-Zemmour-Zaer,Morocco,MA,34.01325,Rabat,Rabat,-6.83255
+509,Rabat-Sale-Zemmour-Zaer,Morocco,MA,34.01325,Rabat,Rabat,-6.83255
+510,Gharb-Chrarda-Beni Hssen,Morocco,MA,34.26101,Kenitra Province,Kenitra,-6.5802
+511,Tadla-Azilal,Morocco,MA,31.73443,Azilal Province,Demnate,-7.00505
+512,Tanger-Tetouan,Morocco,MA,35.57845,,Tetouan,-5.36837
+513,Meknes-Tafilalet,Morocco,MA,33.52666,Ifrane,Ifrane,-5.11019
+514,Tadla-Azilal,Morocco,MA,31.73443,Azilal Province,Demnate,-7.00505
+515,Fes-Boulemane,Morocco,MA,34.03715,Fes,Fes,-4.9998
+516,Fes-Boulemane,Morocco,MA,34.03715,Fes,Fes,-4.9998
+517,Marrakech-Tensift-Al Haouz,Morocco,MA,31.63416,Marrakech,Marrakesh,-7.99994
+518,Fes-Boulemane,Morocco,MA,34.03715,Fes,Fes,-4.9998
+519,Oued ed Dahab-Lagouira,Morocco,MA,30.41071,,Dakhla,-9.55572
+520,Maputo City,Mozambique,MZ,-25.96553,,Maputo,32.58322
+521,Maputo City,Mozambique,MZ,-25.96553,,Maputo,32.58322
+522,Maputo City,Mozambique,MZ,-25.96553,,Maputo,32.58322
+523,Oshana,Namibia,NA,-17.78333,,Ongwediva,15.76667
+524,Khomas,Namibia,NA,-22.55941,,Windhoek,17.08323
+525,Khomas,Namibia,NA,-22.55941,,Windhoek,17.08323
+526,Khomas,Namibia,NA,-22.55941,,Windhoek,17.08323
+527,Omusati,Namibia,NA,-17.5,,Outapi,14.98333
+528,Khomas,Namibia,NA,-22.55941,,Windhoek,17.08323
+529,Oshana,Namibia,NA,-17.91667,,Ondangwa,15.95
+530,Omusati,Namibia,NA,-17.5,,Outapi,14.98333
+531,Khomas,Namibia,NA,-22.55941,,Windhoek,17.08323
+532,Khomas,Namibia,NA,-22.55941,,Windhoek,17.08323
+533,Khomas,Namibia,NA,-22.55941,,Windhoek,17.08323
+534,Khomas,Namibia,NA,-22.55941,,Windhoek,17.08323
+535,Khomas,Namibia,NA,-22.55941,,Windhoek,17.08323
+536,Khomas,Namibia,NA,-22.55941,,Windhoek,17.08323
+537,Khomas,Namibia,NA,-22.55941,,Windhoek,17.08323
+538,Oyo,Nigeria,NG,7.37756,,Ibadan,3.90591
+539,Enugu,Nigeria,NG,6.85783,,Nsukka,7.39577
+540,Edo,Nigeria,NG,6.743,,Ekpoma,6.14029
+541,Abuja Federal Capital Territory,Nigeria,NG,8.87952,,Kuje,7.22756
+542,Oyo,Nigeria,NG,7.37756,,Ibadan,3.90591
+543,Edo,Nigeria,NG,6.33815,,Benin City,5.62575
+544,Abuja Federal Capital Territory,Nigeria,NG,8.94342,,Gwagwalada,7.08165
+545,Oyo,Nigeria,NG,7.37756,,Ibadan,3.90591
+546,Imo,Nigeria,NG,5.48333,,Owerri,7.03041
+547,Ogun,Nigeria,NG,6.81944,,Ijebu-Ode,3.91731
+548,Cross River,Nigeria,NG,4.9517,,Calabar,8.322
+549,Ogun,Nigeria,NG,6.68867,,Ota,3.23202
+550,Lagos,Nigeria,NG,6.61505,,Agege,3.32502
+551,Ondo,Nigeria,NG,7.25256,,Akure,5.19312
+552,Bayelsa,Nigeria,NG,4.92675,,Yenagoa,6.26764
+553,Anambra,Nigeria,NG,6.01634,,Aguata,7.08782
+554,Benue,Nigeria,NG,7.7411,,Makurdi,8.5121
+555,Oyo,Nigeria,NG,7.37756,,Ibadan,3.90591
+556,Lagos,Nigeria,NG,6.49611,,Makoko,3.38778
+557,Cross River,Nigeria,NG,4.9517,,Calabar,8.322
+558,Ekiti,Nigeria,NG,7.78942,,Ifaki,5.24852
+559,Adamawa,Nigeria,NG,10.26761,,Mubi,13.26436
+560,Rivers,Nigeria,NG,4.88396,,Emuoha,6.86021
+561,Ogun,Nigeria,NG,6.81944,,Ijebu-Ode,3.91731
+562,Imo,Nigeria,NG,5.48333,,Owerri,7.03041
+563,Abuja Federal Capital Territory,Nigeria,NG,8.94342,,Gwagwalada,7.08165
+564,Abuja Federal Capital Territory,Nigeria,NG,8.94342,,Gwagwalada,7.08165
+565,Jigawa,Nigeria,NG,12.6269,,Gumel,9.38807
+566,Ondo,Nigeria,NG,7.25256,,Akure,5.19312
+567,Ondo,Nigeria,NG,7.25256,,Akure,5.19312
+568,Lagos,Nigeria,NG,6.45407,,Lagos,3.39467
+569,Lagos,Nigeria,NG,6.58421,,Ojota,3.38026
+570,Lagos,Nigeria,NG,6.61505,,Agege,3.32502
+571,Lagos,Nigeria,NG,6.61505,,Agege,3.32502
+572,Ogun,Nigeria,NG,6.97198,,Ijebu-Igbo,3.99938
+573,Osun,Nigeria,NG,7.63527,,Iwo,4.18156
+574,Lagos,Nigeria,NG,6.61505,,Agege,3.32502
+575,Ondo,Nigeria,NG,7.25256,,Akure,5.19312
+576,Rivers,Nigeria,NG,4.88396,,Emuoha,6.86021
+577,Ogun,Nigeria,NG,6.81944,,Ijebu-Ode,3.91731
+578,Osun,Nigeria,NG,7.4824,,Ile-Ife,4.56032
+579,Lagos,Nigeria,NG,6.61505,,Agege,3.32502
+580,Ogun,Nigeria,NG,6.97198,,Ijebu-Igbo,3.99938
+581,Osun,Nigeria,NG,7.77104,,Osogbo,4.55698
+582,Lagos,Nigeria,NG,6.61505,,Agege,3.32502
+583,Abuja Federal Capital Territory,Nigeria,NG,9.05785,,Abuja,7.49508
+584,Plateau,Nigeria,NG,9.92849,,Jos,8.89212
+585,Ekiti,Nigeria,NG,7.78942,,Ifaki,5.24852
+586,Anambra,Nigeria,NG,6.01634,,Aguata,7.08782
+587,Edo,Nigeria,NG,6.38429,,Uselu,5.60984
+588,Lagos,Nigeria,NG,6.61505,,Agege,3.32502
+589,Oyo,Nigeria,NG,7.37756,,Ibadan,3.90591
+590,Lagos,Nigeria,NG,6.59651,,Ikeja,3.34205
+591,Enugu,Nigeria,NG,6.85783,,Nsukka,7.39577
+592,Abuja Federal Capital Territory,Nigeria,NG,8.94342,,Gwagwalada,7.08165
+593,Anambra,Nigeria,NG,6.14543,,Onitsha,6.78845
+594,Ogun,Nigeria,NG,6.99345,,Isara,3.68148
+595,Edo,Nigeria,NG,6.33815,,Benin City,5.62575
+596,Oyo,Nigeria,NG,7.37756,,Ibadan,3.90591
+597,Rivers,Nigeria,NG,4.88396,,Emuoha,6.86021
+598,Lagos,Nigeria,NG,6.49611,,Makoko,3.38778
+599,Osun,Nigeria,NG,7.77104,,Osogbo,4.55698
+600,Lagos,Nigeria,NG,6.49611,,Makoko,3.38778
+601,Cross River,Nigeria,NG,4.9517,,Calabar,8.322
+602,Benue,Nigeria,NG,7.7411,,Makurdi,8.5121
+603,Akwa Ibom,Nigeria,NG,4.64122,,Eket,7.92092
+604,Rivers,Nigeria,NG,4.77742,,Port Harcourt,7.0134
+605,Osun,Nigeria,NG,7.4824,,Ile-Ife,4.56032
+606,Kwara,Nigeria,NG,8.58263,,Oke-Oyi,4.71622
+607,Osun,Nigeria,NG,7.4824,,Ile-Ife,4.56032
+608,Lagos,Nigeria,NG,6.49611,,Makoko,3.38778
+609,Oyo,Nigeria,NG,7.37756,,Ibadan,3.90591
+610,Oyo,Nigeria,NG,7.37756,,Ibadan,3.90591
+611,Lagos,Nigeria,NG,6.49611,,Makoko,3.38778
+612,Rivers,Nigeria,NG,4.88396,,Emuoha,6.86021
+613,Oyo,Nigeria,NG,7.37756,,Ibadan,3.90591
+614,Benue,Nigeria,NG,7.7411,,Makurdi,8.5121
+615,Abuja Federal Capital Territory,Nigeria,NG,9.05785,,Abuja,7.49508
+616,Cross River,Nigeria,NG,4.9517,,Calabar,8.322
+617,Oyo,Nigeria,NG,7.47103,,Ido,3.7574
+618,Gombe,Nigeria,NG,10.28969,,Gombe,11.16729
+619,Enugu,Nigeria,NG,6.44258,,Enugu,7.5022
+620,Kaduna,Nigeria,NG,10.52641,,Kaduna,7.43879
+621,Kogi,Nigeria,NG,7.80236,,Lokoja,6.74301
+622,Osun,Nigeria,NG,7.77104,,Osogbo,4.55698
+623,Nassarawa,Nigeria,NG,8.4939,,Lafia,8.51532
+624,Rivers,Nigeria,NG,4.88396,,Emuoha,6.86021
+625,Ogun,Nigeria,NG,7.23251,,Odeda,3.52819
+626,Benue,Nigeria,NG,7.36308,,Yandev,9.04235
+627,Lagos,Nigeria,NG,6.49611,,Makoko,3.38778
+628,Lagos,Nigeria,NG,6.59651,,Ikeja,3.34205
+629,Kogi,Nigeria,NG,7.80236,,Lokoja,6.74301
+630,Lagos,Nigeria,NG,6.49611,,Makoko,3.38778
+631,Edo,Nigeria,NG,6.743,,Ekpoma,6.14029
+632,Oyo,Nigeria,NG,7.37756,,Ibadan,3.90591
+633,Lagos,Nigeria,NG,6.58421,,Ojota,3.38026
+634,Edo,Nigeria,NG,6.743,,Ekpoma,6.14029
+635,Akwa Ibom,Nigeria,NG,4.64122,,Eket,7.92092
+636,Imo,Nigeria,NG,5.48333,,Owerri,7.03041
+637,Oyo,Nigeria,NG,8.13373,,Ogbomoso,4.24014
+638,Oyo,Nigeria,NG,8.13373,,Ogbomoso,4.24014
+639,Osun,Nigeria,NG,7.77104,,Osogbo,4.55698
+640,Ogun,Nigeria,NG,6.81944,,Ijebu-Ode,3.91731
+641,Imo,Nigeria,NG,5.48333,,Owerri,7.03041
+642,Niger,Nigeria,NG,9.61524,,Minna,6.54776
+643,Abuja Federal Capital Territory,Nigeria,NG,9.05785,,Abuja,7.49508
+644,Kogi,Nigeria,NG,7.80236,,Lokoja,6.74301
+645,Ebonyi,Nigeria,NG,6.32485,,Abakaliki,8.11368
+646,Osun,Nigeria,NG,7.77104,,Osogbo,4.55698
+647,Osun,Nigeria,NG,7.77104,,Osogbo,4.55698
+648,Kogi,Nigeria,NG,7.10651,,Idah,6.73415
+649,Rivers,Nigeria,NG,4.88396,,Emuoha,6.86021
+650,Abuja Federal Capital Territory,Nigeria,NG,9.27995,,Bwari,7.38045
+651,Edo,Nigeria,NG,6.33815,,Benin City,5.62575
+652,Ekiti,Nigeria,NG,7.79148,,Ikole-Ekiti,5.50865
+653,Cross River,Nigeria,NG,4.9517,,Calabar,8.322
+654,Plateau,Nigeria,NG,9.7291,,Vom,8.79138
+655,Plateau,Nigeria,NG,9.92849,,Jos,8.89212
+656,Oyo,Nigeria,NG,7.763,,Jobele,3.91935
+657,Ogun,Nigeria,NG,7.15571,,Abeokuta,3.34509
+658,Ogun,Nigeria,NG,7.15571,,Abeokuta,3.34509
+659,Ekiti,Nigeria,NG,7.62329,,Ado-Ekiti,5.22087
+660,Cross River,Nigeria,NG,4.9517,,Calabar,8.322
+661,Akwa Ibom,Nigeria,NG,5.05127,,Uyo,7.9335
+662,Edo,Nigeria,NG,7.06756,,Auchi,6.2636
+663,Oyo,Nigeria,NG,7.37756,,Ibadan,3.90591
+664,Edo,Nigeria,NG,6.33815,,Benin City,5.62575
+665,Ondo,Nigeria,NG,7.1962,,Owo,5.58681
+666,Adamawa,Nigeria,NG,9.28333,,Jimeta,12.46667
+667,Osun,Nigeria,NG,7.77104,,Osogbo,4.55698
+668,Adamawa,Nigeria,NG,9.28333,,Jimeta,12.46667
+669,Benue,Nigeria,NG,7.7411,,Makurdi,8.5121
+670,Plateau,Nigeria,NG,9.41667,,Panyam,9.21667
+671,Ekiti,Nigeria,NG,7.78942,,Ifaki,5.24852
+672,Ondo,Nigeria,NG,7.25256,,Akure,5.19312
+673,Ondo,Nigeria,NG,7.52591,,Ikare,5.75342
+674,Ondo,Nigeria,NG,7.52591,,Ikare,5.75342
+675,Oyo,Nigeria,NG,7.37756,,Ibadan,3.90591
+676,Abia,Nigeria,NG,5.10658,,Aba,7.36667
+677,Kogi,Nigeria,NG,7.5677,,Abocho,6.9863
+678,Bayelsa,Nigeria,NG,4.97032,,Amassoma,6.10915
+679,Abia,Nigeria,NG,5.52627,,Umuahia,7.48959
+680,Kano,Nigeria,NG,11.80937,,Wudil,8.84422
+681,Delta,Nigeria,NG,5.79023,,Abraka,6.10473
+682,Kaduna,Nigeria,NG,10.52641,,Kaduna,7.43879
+683,Ekiti,Nigeria,NG,7.78942,,Ifaki,5.24852
+684,Ekiti,Nigeria,NG,7.79976,,Oye-Ekiti,5.33242
+685,Kwara,Nigeria,NG,8.49664,,Ilorin,4.54214
+686,Bauchi,Nigeria,NG,10.31344,,Bauchi,9.84327
+687,Adamawa,Nigeria,NG,9.28333,,Jimeta,12.46667
+688,Abuja Federal Capital Territory,Nigeria,NG,9.27995,,Bwari,7.38045
+689,Oyo,Nigeria,NG,7.37756,,Ibadan,3.90591
+690,Imo,Nigeria,NG,5.48333,,Owerri,7.03041
+691,Edo,Nigeria,NG,6.33815,,Benin City,5.62575
+692,Kaduna,Nigeria,NG,11.11128,,Zaria,7.7227
+693,Anambra,Nigeria,NG,6.21253,,Awka,7.07231
+694,Nassarawa,Nigeria,NG,8.4939,,Lafia,8.51532
+695,Kwara,Nigeria,NG,8.49664,,Ilorin,4.54214
+696,Kwara,Nigeria,NG,8.49664,,Ilorin,4.54214
+697,Edo,Nigeria,NG,6.56536,,Iguobazuwa,5.35443
+698,Benue,Nigeria,NG,7.7411,,Makurdi,8.5121
+699,Oyo,Nigeria,NG,7.37756,,Ibadan,3.90591
+700,Oyo,Nigeria,NG,7.37756,,Ibadan,3.90591
+701,Niger,Nigeria,NG,9.08044,,Bida,6.0099
+702,Ondo,Nigeria,NG,7.1962,,Owo,5.58681
+703,Ogun,Nigeria,NG,7.15571,,Abeokuta,3.34509
+704,Oyo,Nigeria,NG,8.13373,,Ogbomoso,4.24014
+705,Oyo,Nigeria,NG,7.37756,,Ibadan,3.90591
+706,,Western Sahara,EH,26.73841,,Smara,-11.67194
+707,Harare,Zimbabwe,ZW,-17.82772,,Harare,31.05337
+708,Harare,Zimbabwe,ZW,-17.82772,,Harare,31.05337
+709,Masvingo,Zimbabwe,ZW,-20.06373,,Masvingo,30.82766
+710,Manicaland,Zimbabwe,ZW,-18.52785,,Rusape,32.12843
+711,Harare,Zimbabwe,ZW,-17.82772,,Harare,31.05337
+712,Matabeleland South,Zimbabwe,ZW,-20.28979,,Esigodini,28.92261
+713,Harare,Zimbabwe,ZW,-17.82772,,Harare,31.05337
+714,Harare,Zimbabwe,ZW,-17.82772,,Harare,31.05337
+715,Harare,Zimbabwe,ZW,-17.82772,,Harare,31.05337
+716,Harare,Zimbabwe,ZW,-17.82772,,Harare,31.05337
+717,Harare,Zimbabwe,ZW,-17.82772,,Harare,31.05337
+718,Harare,Zimbabwe,ZW,-17.82772,,Harare,31.05337
+719,Matabeleland South,Zimbabwe,ZW,-20.93333,,Gwanda,29
+720,Harare,Zimbabwe,ZW,-17.82772,,Harare,31.05337
+721,Manicaland,Zimbabwe,ZW,-18.89112,,Penhalonga,32.69781
+722,Harare,Zimbabwe,ZW,-17.82772,,Harare,31.05337
+723,Harare,Zimbabwe,ZW,-17.89,,Epworth,31.1475
+724,Harare,Zimbabwe,ZW,-17.82772,,Harare,31.05337
+725,Bulawayo,Zimbabwe,ZW,-20.15,,Bulawayo,28.58333
+726,Manicaland,Zimbabwe,ZW,-20.18833,,Chipinge,32.62365
+727,Matabeleland North,Zimbabwe,ZW,-18.93149,,Lupane,27.80696
+728,Masvingo,Zimbabwe,ZW,-20.06373,,Masvingo,30.82766
+729,Bulawayo,Zimbabwe,ZW,-20.15,,Bulawayo,28.58333
+730,Midlands,Zimbabwe,ZW,-19.03333,,Redcliff,29.78333
+731,Bulawayo,Zimbabwe,ZW,-20.15,,Bulawayo,28.58333
+732,Harare,Zimbabwe,ZW,-17.82772,,Harare,31.05337
+733,Southern Region,Malawi,MW,-15.78721,,Makata,35.03046
